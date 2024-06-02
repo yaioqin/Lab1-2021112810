@@ -12,4 +12,7 @@ public class Main {
             }
         });
     }
+    public void fun4(){
+        System.out.println("hello Lab1");
+    }
 }
