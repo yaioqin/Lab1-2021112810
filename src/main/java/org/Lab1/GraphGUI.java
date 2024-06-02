@@ -956,5 +956,7 @@ public class GraphGUI extends JFrame {
             isPaused = false;
         }
     }
-
+    public void test(){
+        System.out.println("hello Lab1");
+    }
 }
