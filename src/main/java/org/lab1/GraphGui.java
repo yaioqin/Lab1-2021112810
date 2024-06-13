@@ -540,45 +540,33 @@ public class GraphGui extends JFrame {
      * @param word2 第二个单词
      * @return 包含桥接词信息的字符串
      */
-    private String queryBridgeWords(Graph<String, DefaultWeightedEdge> G,String word1, String word2) {
-        // 检查图中是否包含 word1 和 word2
-        if (!G.containsVertex(word1) && !G.containsVertex(word2)) {
+    public String queryBridgeWords(Graph<String, DefaultWeightedEdge> G,String word1, String word2) {
+        if (G==null || (!G.containsVertex(word1) && !G.containsVertex(word2))){// 检查图中是否包含 word1 和 word2
             return "No \"" + word1 + "\" and \"" + word2 + "\" in the graph!";
         } else if (!G.containsVertex(word1) || !G.containsVertex(word2)) {
             return "No \"" + (G.containsVertex(word1) ? word2 : word1) + "\" in the graph!";
         }
-
-        // 用于存储桥接词的结果字符串
-        StringBuilder result = new StringBuilder();
+        StringBuilder result = new StringBuilder();// 用于存储桥接词的结果字符串
         List<String> list = new ArrayList<>();
-        // 是否找到桥接词的标志
-        boolean foundBridge = false;
-
-        // 获取以 word1 为源的所有边
-        Set<DefaultWeightedEdge> edgesFromWord1 = G.outgoingEdgesOf(word1);
-
-        // 遍历这些边，找到所有的目标顶点
-        for (DefaultWeightedEdge edge : edgesFromWord1) {
+        boolean foundBridge = false;// 是否找到桥接词的标志
+        int count=0;
+        Set<DefaultWeightedEdge> edgesFromWord1 = G.outgoingEdgesOf(word1);// 获取以 word1 为源的所有边
+        for (DefaultWeightedEdge edge : edgesFromWord1) {// 遍历这些边，找到所有的目标顶点
             String intermediateWord = G.getEdgeTarget(edge);
-            // 获取 intermediateWord 到 word2 的所有边
-            Set<DefaultWeightedEdge> edgesFromIntermediate = G.outgoingEdgesOf(intermediateWord);
+            Set<DefaultWeightedEdge> edgesFromIntermediate = G.outgoingEdgesOf(intermediateWord); // 获取 intermediateWord 到 word2 的所有边
             for (DefaultWeightedEdge secondEdge : edgesFromIntermediate) {
                 if (G.getEdgeTarget(secondEdge).equals(word2)) {
-                    // 如果已找到桥接词，则在结果字符串中添加逗号
-                    if (foundBridge) {
+                    if (foundBridge) {// 如果已找到桥接词，则在结果字符串中添加逗号
                         result.append(", ");
-
                     }
-                    // 将 intermediateWord（桥接词）添加到结果字符串中
-                    result.append(intermediateWord);
+                    result.append(intermediateWord);// 将 intermediateWord（桥接词）添加到结果字符串中
                     list.add(intermediateWord);
                     foundBridge = true;
+                    count++;
                 }
             }
         }
-
-        // 如果未找到桥接词，则返回相应消息
-        if (!foundBridge) {
+        if (!foundBridge) {// 如果未找到桥接词，则返回相应消息
             return "No bridge words from \"" + word1 + "\" to \"" + word2 + "\"!";
         }
         List<String> word1List = new ArrayList<>();
@@ -586,9 +574,11 @@ public class GraphGui extends JFrame {
         List<String> word2List = new ArrayList<>();
         word2List.add(word2);
         customizeGraph(word1List, word2List, list);
-        // 返回包含桥接词信息的字符串
-        return "The bridge words from \"" + word1 + "\" to \"" + word2 + "\" are: " + result;
+        if(count==1) return  "The bridge words from \"" + word1 + "\" to \"" + word2 + "\" is:"+ result;
+        return "The bridge words from \"" + word1 + "\" to \"" + word2 + "\" are:" + result;
     }
+
+
 
     /**
      * 在图中显示出桥接词.
