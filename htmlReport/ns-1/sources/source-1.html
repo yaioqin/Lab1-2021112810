@@ -1,0 +1,1585 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=GBK"> 
+  <title>Coverage Report > GraphGui</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">org.lab1</a>
+</div>
+
+<h1>Coverage Summary for Class: GraphGui (org.lab1)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">GraphGui</td>
+<td class="coverageStat">
+  <span class="percent">
+    11.9%
+  </span>
+  <span class="absValue">
+    (5/42)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    29.6%
+  </span>
+  <span class="absValue">
+    (135/456)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">GraphGui$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (1/7)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$2</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    20%
+  </span>
+  <span class="absValue">
+    (1/5)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$3</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    12.5%
+  </span>
+  <span class="absValue">
+    (1/8)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$4</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    14.3%
+  </span>
+  <span class="absValue">
+    (1/7)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$5</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    2.7%
+  </span>
+  <span class="absValue">
+    (1/37)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$6</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    16.7%
+  </span>
+  <span class="absValue">
+    (1/6)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$7</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    12.5%
+  </span>
+  <span class="absValue">
+    (1/8)
+  </span>
+</td>
+  </tr>
+  <tr>
+    <td class="name">GraphGui$8</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    3.3%
+  </span>
+  <span class="absValue">
+    (1/30)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>Total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    22.4%
+  </span>
+  <span class="absValue">
+    (13/58)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    25.4%
+  </span>
+  <span class="absValue">
+    (143/564)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package org.lab1;
+&nbsp;
+&nbsp;import com.mxgraph.layout.mxCircleLayout;
+&nbsp;import com.mxgraph.model.mxCell;
+&nbsp;import com.mxgraph.swing.mxGraphComponent;
+&nbsp;import com.mxgraph.util.mxCellRenderer;
+&nbsp;import com.mxgraph.util.mxConstants;
+&nbsp;import com.mxgraph.view.mxGraph;
+&nbsp;import java.awt.BorderLayout;
+&nbsp;import java.awt.Color;
+&nbsp;import java.awt.event.ActionEvent;
+&nbsp;import java.awt.event.ActionListener;
+&nbsp;import java.awt.image.BufferedImage;
+&nbsp;import java.io.BufferedReader;
+&nbsp;import java.io.BufferedWriter;
+&nbsp;import java.io.File;
+&nbsp;import java.io.FileInputStream;
+&nbsp;import java.io.FileOutputStream;
+&nbsp;import java.io.IOException;
+&nbsp;import java.io.InputStreamReader;
+&nbsp;import java.io.OutputStreamWriter;
+&nbsp;import java.nio.charset.StandardCharsets;
+&nbsp;import java.security.SecureRandom;
+&nbsp;import java.util.ArrayList;
+&nbsp;import java.util.Collections;
+&nbsp;import java.util.HashSet;
+&nbsp;import java.util.List;
+&nbsp;import java.util.Set;
+&nbsp;import javax.imageio.ImageIO;
+&nbsp;import javax.swing.JButton;
+&nbsp;import javax.swing.JFileChooser;
+&nbsp;import javax.swing.JFrame;
+&nbsp;import javax.swing.JLabel;
+&nbsp;import javax.swing.JOptionPane;
+&nbsp;import javax.swing.JPanel;
+&nbsp;import javax.swing.JTextArea;
+&nbsp;import javax.swing.JTextField;
+&nbsp;import javax.swing.Timer;
+&nbsp;import org.jgrapht.Graph;
+&nbsp;import org.jgrapht.Graphs;
+&nbsp;import org.jgrapht.ext.JGraphXAdapter;
+&nbsp;import org.jgrapht.graph.DefaultDirectedWeightedGraph;
+&nbsp;import org.jgrapht.graph.DefaultWeightedEdge;
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;/**
+&nbsp; * GraphGui 类是一个用于显示和与图交互的图形用户界面.
+&nbsp; * 它提供了各种功能，如打开文件、保存图、查询桥接词、根据桥接词生成新文本、找到最短路径、执行随机游走.
+&nbsp; */
+&nbsp;
+&nbsp;public class GraphGui extends JFrame {
+&nbsp;    private mxGraphComponent graphComponent; // 获取用于显示图形的图组件
+&nbsp;    private JButton openButton; //1.打开txt文件 2.显示有向图
+&nbsp;    private JButton saveButton; //保存图
+&nbsp;    private JButton queryButton; //3.查询桥接词
+&nbsp;    private JButton generateButton; //4.根据相邻单词的桥接词生成新的文本
+&nbsp;    private JButton shortestPathButton; //5.最短路径
+&nbsp;    private JButton randomWalkButton; //6.随机游走
+&nbsp;    private JButton pauseButton; // 6.暂停按钮
+&nbsp;    private JButton endButton; // 6.结束按钮
+&nbsp;    private Graph&lt;String, DefaultWeightedEdge&gt; graph; // 图
+&nbsp;    private Timer colorTimer; // 颜色修改器
+<b class="fc">&nbsp;    private boolean isPaused = false; // 计时器状态</b>
+<b class="fc">&nbsp;    private final SecureRandom randomBridgeWord = new SecureRandom(); //用于随机选取出桥接词,增强不可预测性</b>
+&nbsp;    //private final Random randomBridgeWord = new Random(); //用于随机选取出桥接词 改bad practice时用
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 构造函数.
+&nbsp;     * 可在这里面绑定每个按钮的触发事件.
+&nbsp;     */
+<b class="fc">&nbsp;    public GraphGui() {</b>
+<b class="fc">&nbsp;        openButton = new JButton(&quot;Open File&quot;);</b>
+<b class="fc">&nbsp;        openButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             功能1和2.
+&nbsp;             * 读入文本并生成有向图并展示有向图
+&nbsp;             */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                JFileChooser fileChooser = new JFileChooser();</b>
+<b class="nc">&nbsp;                int result = fileChooser.showOpenDialog(null);</b>
+<b class="nc">&nbsp;                if (result == JFileChooser.APPROVE_OPTION) {</b>
+<b class="nc">&nbsp;                    File selectedFile = fileChooser.getSelectedFile();</b>
+<b class="nc">&nbsp;                    createDirectedGraph(selectedFile);</b>
+&nbsp;                }
+&nbsp;            }
+&nbsp;        });
+&nbsp;
+<b class="fc">&nbsp;        saveButton = new JButton(&quot;Save As Image&quot;);</b>
+<b class="fc">&nbsp;        saveButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             * 可选功能：将生成的有向图以图形文件形式保存到磁盘.
+&nbsp;
+&nbsp;             * @param e the event to be processed.
+&nbsp;             */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+&nbsp;                //防止不导图乱按
+<b class="nc">&nbsp;                if (graph == null || graph.vertexSet().isEmpty()) {</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null, &quot;还未导入图，请先导入再保存。&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);</b>
+&nbsp;                    return;
+&nbsp;                }
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                saveAsImage();</b>
+&nbsp;            }
+&nbsp;        });
+&nbsp;
+<b class="fc">&nbsp;        queryButton = new JButton(&quot;Query Bridge Words&quot;);</b>
+<b class="fc">&nbsp;        JTextField word1Field = new JTextField(10);</b>
+<b class="fc">&nbsp;        JTextField word2Field = new JTextField(10);</b>
+<b class="fc">&nbsp;        queryButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             * 功能需求3：查询桥接词（bridge words）.
+&nbsp;
+&nbsp;             * @param e the event to be processed
+&nbsp;             */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+&nbsp;                //防止不导图乱按
+<b class="nc">&nbsp;                if (graph == null || graph.vertexSet().isEmpty()) {</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null, &quot;图为空，无法查询桥接词。&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);</b>
+&nbsp;                    return;
+&nbsp;                }
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                String word1 = word1Field.getText().trim().toLowerCase();</b>
+<b class="nc">&nbsp;                String word2 = word2Field.getText().trim().toLowerCase();</b>
+<b class="nc">&nbsp;                String result = queryBridgeWords(graph,word1, word2);</b>
+<b class="nc">&nbsp;                JOptionPane.showMessageDialog(GraphGui.this, result,</b>
+&nbsp;                        &quot;Bridge Words Query Result&quot;, JOptionPane.INFORMATION_MESSAGE);
+&nbsp;            }
+&nbsp;        });
+&nbsp;
+<b class="fc">&nbsp;        generateButton = new JButton(&quot;Generate New Text&quot;);</b>
+<b class="fc">&nbsp;        JTextArea inputTextArea = new JTextArea(5, 20);</b>
+<b class="fc">&nbsp;        JTextArea outputTextArea = new JTextArea(5, 20);</b>
+&nbsp;
+&nbsp;        // 启用自动换行并以单词为单位换行
+<b class="fc">&nbsp;        inputTextArea.setLineWrap(true);</b>
+<b class="fc">&nbsp;        inputTextArea.setWrapStyleWord(true);</b>
+<b class="fc">&nbsp;        outputTextArea.setLineWrap(true);</b>
+<b class="fc">&nbsp;        outputTextArea.setWrapStyleWord(true);</b>
+&nbsp;
+<b class="fc">&nbsp;        generateButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             *功能需求4：根据bridge word生成新文本.
+&nbsp;
+&nbsp;             * @param e the event to be processed.
+&nbsp;             */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+&nbsp;                //防止不导图乱按
+<b class="nc">&nbsp;                if (graph == null || graph.vertexSet().isEmpty()) {</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null, &quot;图为空，无法生成新文本。&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);</b>
+&nbsp;                    return;
+&nbsp;                }
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                String inputText = inputTextArea.getText();</b>
+<b class="nc">&nbsp;                String s = generateNewText(graph,inputText);</b>
+<b class="nc">&nbsp;                outputTextArea.setText(s);</b>
+&nbsp;            }
+&nbsp;        });
+&nbsp;
+<b class="fc">&nbsp;        shortestPathButton = new JButton(&quot;Shortest Path&quot;);</b>
+<b class="fc">&nbsp;        shortestPathButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             * 5.最短路径.
+&nbsp;
+&nbsp;             * @param e the event to be processed
+&nbsp;             * */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+<b class="nc">&nbsp;                if (graph == null || graph.vertexSet().isEmpty()) {</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null, &quot;图为空，无法计算最短路径。&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);</b>
+&nbsp;                    return;
+&nbsp;                }
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                String input = JOptionPane.showInputDialog(null,</b>
+&nbsp;                        &quot;Enter one or two words  separated by space:&quot;);
+<b class="nc">&nbsp;                if (input != null &amp;&amp; !input.trim().isEmpty()) {</b>
+<b class="nc">&nbsp;                    String[] words = input.trim().split(&quot;\\s+&quot;);</b>
+<b class="nc">&nbsp;                    if (words.length == 2) {</b>
+<b class="nc">&nbsp;                        String paths = calcShortestPath(graph,words[0], words[1]);</b>
+&nbsp;                        // 找到最后一个@符号的索引
+<b class="nc">&nbsp;                        int lastIndex = paths.lastIndexOf(&#39;@&#39;);</b>
+&nbsp;                        // 分割字符串
+<b class="nc">&nbsp;                        String message = paths.substring(lastIndex + 1);</b>
+<b class="nc">&nbsp;                        message = message.replace(&quot;,&quot;, &quot;-&gt;&quot;);</b>
+<b class="nc">&nbsp;                        paths = paths.substring(0, lastIndex);</b>
+<b class="nc">&nbsp;                        if (!paths.equals(&quot;Infinity;&quot;)) {</b>
+<b class="nc">&nbsp;                            showShortestPaths(paths);</b>
+<b class="nc">&nbsp;                            javax.swing.JOptionPane.showMessageDialog(null, message);</b>
+&nbsp;                        } else {
+<b class="nc">&nbsp;                            message = &quot;没有从&quot; + words[0] + &quot;到&quot; + words[1] + &quot;的路径！&quot;;</b>
+<b class="nc">&nbsp;                            javax.swing.JOptionPane.showMessageDialog(null, message);</b>
+&nbsp;                        }
+<b class="nc">&nbsp;                    } else if (words.length == 1) {</b>
+&nbsp;                        // 遍历图中的节点，将words[0]作为起点，调用calcShortestPath
+<b class="nc">&nbsp;                        String startNode = words[0];</b>
+&nbsp;                        // StringBuilder allPaths = new StringBuilder();
+<b class="nc">&nbsp;                        for (String vertex : graph.vertexSet()) {</b>
+<b class="nc">&nbsp;                            if (!vertex.equals(startNode)) {</b>
+<b class="nc">&nbsp;                                String paths = calcShortestPath(graph,startNode, vertex);</b>
+&nbsp;                                // 找到最后一个@符号的索引
+<b class="nc">&nbsp;                                int lastIndex = paths.lastIndexOf(&#39;@&#39;);</b>
+&nbsp;                                // 分割字符串
+<b class="nc">&nbsp;                                String message = paths.substring(lastIndex + 1);</b>
+<b class="nc">&nbsp;                                message = message.replace(&quot;,&quot;, &quot;-&gt;&quot;);</b>
+<b class="nc">&nbsp;                                paths = paths.substring(0, lastIndex);</b>
+<b class="nc">&nbsp;                                if (!paths.equals(&quot;Infinity;&quot;)) {</b>
+<b class="nc">&nbsp;                                    showShortestPaths(paths);</b>
+<b class="nc">&nbsp;                                    javax.swing.JOptionPane.showMessageDialog(null, message);</b>
+&nbsp;                                } else {
+<b class="nc">&nbsp;                                    message = &quot;没有从&quot; + startNode + &quot;到&quot; + vertex + &quot;的路径！&quot;;</b>
+<b class="nc">&nbsp;                                    javax.swing.JOptionPane.showMessageDialog(null, message);</b>
+&nbsp;                                }
+&nbsp;                            }
+<b class="nc">&nbsp;                        }</b>
+<b class="nc">&nbsp;                    } else {</b>
+<b class="nc">&nbsp;                        JOptionPane.showMessageDialog(null, &quot;请输入一个或两个单词，以空格隔开&quot;);</b>
+&nbsp;                    }
+<b class="nc">&nbsp;                } else {</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null, &quot;请输入一个或两个单词，以空格隔开&quot;);</b>
+&nbsp;                }
+&nbsp;            }
+&nbsp;        });
+&nbsp;        // 构造函数中初始化按钮
+<b class="fc">&nbsp;        randomWalkButton = new JButton(&quot;Random Walk&quot;);</b>
+<b class="fc">&nbsp;        randomWalkButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             * 6.随机游走.
+&nbsp;
+&nbsp;             * @param e the event to be processed
+&nbsp;             * */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+<b class="nc">&nbsp;                if (graph == null || graph.vertexSet().isEmpty()) {</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null, &quot;图为空，无法执行随机游走。&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);</b>
+&nbsp;                    return;
+&nbsp;                }
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                String randompath = randomWalk();</b>
+<b class="nc">&nbsp;                showRandomPath(randompath);</b>
+&nbsp;            }
+&nbsp;        });
+&nbsp;
+&nbsp;        //暂停随机游走按钮
+<b class="fc">&nbsp;        pauseButton = new JButton(&quot;Pause Random Walk&quot;);</b>
+<b class="fc">&nbsp;        pauseButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             * 6.随机游走的暂停/继续按钮.
+&nbsp;
+&nbsp;             * @param e the event to be processed
+&nbsp;             * */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+&nbsp;
+<b class="nc">&nbsp;                if (colorTimer != null) {</b>
+<b class="nc">&nbsp;                    if (isPaused) {</b>
+<b class="nc">&nbsp;                        colorTimer.start();</b>
+<b class="nc">&nbsp;                        pauseButton.setText(&quot;Pause Random Walk&quot;);</b>
+&nbsp;                    } else {
+<b class="nc">&nbsp;                        colorTimer.stop();</b>
+<b class="nc">&nbsp;                        pauseButton.setText(&quot;Resume Random Walk&quot;);</b>
+&nbsp;                    }
+<b class="nc">&nbsp;                    isPaused = !isPaused;</b>
+&nbsp;                }
+&nbsp;            }
+&nbsp;        });
+&nbsp;
+&nbsp;        //结束随机游走按钮
+<b class="fc">&nbsp;        endButton = new JButton(&quot;End Random Walk&quot;);</b>
+<b class="fc">&nbsp;        endButton.addActionListener(new ActionListener() {</b>
+&nbsp;            /**
+&nbsp;             * 6.随机游走的结束按钮.
+&nbsp;
+&nbsp;             * @param e the event to be processed
+&nbsp;             */
+&nbsp;            @Override
+&nbsp;            public void actionPerformed(ActionEvent e) {
+<b class="nc">&nbsp;                boolean nullFlag = false;</b>
+<b class="nc">&nbsp;                if (colorTimer != null) {</b>
+<b class="nc">&nbsp;                    nullFlag = true;</b>
+&nbsp;                }
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+<b class="nc">&nbsp;                if (nullFlag) {</b>
+<b class="nc">&nbsp;                    int confirmResult = JOptionPane.showConfirmDialog(null,</b>
+&nbsp;                            &quot;结束游走成功，需要保存随机游走路径吗?&quot;, &quot;Confirm&quot;, JOptionPane.YES_NO_OPTION);
+<b class="nc">&nbsp;                    if (confirmResult == JOptionPane.NO_OPTION) {</b>
+&nbsp;                        return; // 如果用户选择不保存，直接返回
+<b class="nc">&nbsp;                    } else if (confirmResult == JOptionPane.YES_OPTION) {</b>
+&nbsp;                        // 用户选择保存，弹出文件选择对话框
+<b class="nc">&nbsp;                        JFileChooser fileChooser = new JFileChooser();</b>
+<b class="nc">&nbsp;                        int result = fileChooser.showSaveDialog(null);</b>
+<b class="nc">&nbsp;                        if (result != JFileChooser.APPROVE_OPTION) {</b>
+&nbsp;                            return; // 如果用户未选择文件，直接返回
+&nbsp;                        }
+&nbsp;                        // 获取用户选择的文件
+<b class="nc">&nbsp;                        File selectedFile = fileChooser.getSelectedFile();</b>
+&nbsp;                        // 清空文件内容  添加, StandardCharsets.UTF_8指定字符集解决spotsbug问题
+&nbsp;                        //try (BufferedWriter clearWriter = new BufferedWriter(new FileWriter(selectedFile))) {
+<b class="nc">&nbsp;                        try (BufferedWriter clearWriter = new BufferedWriter(new OutputStreamWriter(</b>
+&nbsp;                                new FileOutputStream(selectedFile), StandardCharsets.UTF_8))) {
+<b class="nc">&nbsp;                            clearWriter.write(&quot;&quot;); // 清空文件内容</b>
+<b class="nc">&nbsp;                        } catch (IOException ex) {</b>
+<b class="nc">&nbsp;                            ex.printStackTrace();</b>
+<b class="nc">&nbsp;                            JOptionPane.showMessageDialog(null,</b>
+&nbsp;                                    &quot;Failed to clear file content.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+&nbsp;                            return;
+<b class="nc">&nbsp;                        }</b>
+&nbsp;                        // 复制文件内容
+&nbsp;                        // 也是指定字符集的问题
+&nbsp;                        //try (BufferedReader reader = new BufferedReader(new FileReader(&quot;tmpshort.txt&quot;));
+<b class="nc">&nbsp;                        try (BufferedReader reader = new BufferedReader(new InputStreamReader(</b>
+&nbsp;                                new FileInputStream(&quot;tmpshort.txt&quot;), StandardCharsets.UTF_8));
+&nbsp;                             //也是指定UTF-8
+&nbsp;                             //BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile))) {
+<b class="nc">&nbsp;                             BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(</b>
+&nbsp;                                     new FileOutputStream(selectedFile), StandardCharsets.UTF_8))) {
+&nbsp;                            String line;
+<b class="nc">&nbsp;                            while ((line = reader.readLine()) != null) {</b>
+<b class="nc">&nbsp;                                writer.write(line);</b>
+<b class="nc">&nbsp;                                writer.newLine();</b>
+&nbsp;                            }
+<b class="nc">&nbsp;                            JOptionPane.showMessageDialog(null,</b>
+&nbsp;                                    &quot;保存成功&quot;, &quot;Success&quot;, JOptionPane.INFORMATION_MESSAGE);
+<b class="nc">&nbsp;                        } catch (IOException ex) {</b>
+<b class="nc">&nbsp;                            ex.printStackTrace();</b>
+<b class="nc">&nbsp;                            JOptionPane.showMessageDialog(null,</b>
+&nbsp;                                    &quot;Failed to copy file content.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+&nbsp;                            return;
+<b class="nc">&nbsp;                        }</b>
+&nbsp;                    }
+&nbsp;                }
+&nbsp;
+<b class="nc">&nbsp;                togglePauseTimer();</b>
+&nbsp;            }
+&nbsp;        });
+<b class="fc">&nbsp;        JPanel panel = new JPanel();</b>
+<b class="fc">&nbsp;        panel.add(openButton);</b>
+<b class="fc">&nbsp;        panel.add(saveButton);</b>
+<b class="fc">&nbsp;        panel.add(shortestPathButton);</b>
+<b class="fc">&nbsp;        panel.add(randomWalkButton);</b>
+<b class="fc">&nbsp;        panel.add(pauseButton);</b>
+<b class="fc">&nbsp;        panel.add(endButton);</b>
+<b class="fc">&nbsp;        final JPanel RightPanel = new JPanel();</b>
+<b class="fc">&nbsp;        RightPanel.add(new JLabel(&quot;Word 1: &quot;));</b>
+<b class="fc">&nbsp;        RightPanel.add(word1Field);</b>
+<b class="fc">&nbsp;        RightPanel.add(new JLabel(&quot;Word 2: &quot;));</b>
+<b class="fc">&nbsp;        RightPanel.add(word2Field);</b>
+<b class="fc">&nbsp;        RightPanel.add(queryButton);</b>
+<b class="fc">&nbsp;        RightPanel.add(new JLabel(&quot;input: &quot;));</b>
+<b class="fc">&nbsp;        RightPanel.add(inputTextArea);</b>
+<b class="fc">&nbsp;        RightPanel.add(generateButton);</b>
+<b class="fc">&nbsp;        RightPanel.add(new JLabel(&quot;output: &quot;));</b>
+<b class="fc">&nbsp;        RightPanel.add(outputTextArea);</b>
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;        this.add(panel, BorderLayout.NORTH);</b>
+<b class="fc">&nbsp;        this.add(RightPanel, BorderLayout.SOUTH);</b>
+&nbsp;
+<b class="fc">&nbsp;        setTitle(&quot;Graph GUI&quot;);</b>
+<b class="fc">&nbsp;        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);</b>
+<b class="fc">&nbsp;        setSize(1200, 600);</b>
+<b class="fc">&nbsp;        setVisible(true);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 打开文件，忽略文件中的所有非英文字母的字符，并将所有单词保存在 words 数组中.
+&nbsp;     *
+&nbsp;     * @param file 要处理的文件
+&nbsp;     */
+&nbsp;    private void createDirectedGraph(File file) {
+<b class="nc">&nbsp;        StringBuilder content = new StringBuilder();</b>
+&nbsp;        //也是指定utf-8编码的问题
+&nbsp;        //try (BufferedReader br = new BufferedReader(new FileReader(file))) {
+<b class="nc">&nbsp;        try (BufferedReader br = new BufferedReader(new InputStreamReader(</b>
+&nbsp;                new FileInputStream(file), StandardCharsets.UTF_8))) {
+&nbsp;            String line;
+<b class="nc">&nbsp;            while ((line = br.readLine()) != null) {</b>
+<b class="nc">&nbsp;                content.append(line).append(&quot; &quot;);</b>
+&nbsp;            }
+<b class="nc">&nbsp;        } catch (IOException e) {</b>
+<b class="nc">&nbsp;            e.printStackTrace();</b>
+&nbsp;            return;
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        String text = content.toString().replaceAll(&quot;[^a-zA-Z ]&quot;, &quot;&quot;).toLowerCase();</b>
+<b class="nc">&nbsp;        String[] words = text.split(&quot;\\s+&quot;);</b>
+<b class="nc">&nbsp;        buildGraph(words);</b>
+&nbsp;    }
+&nbsp;    /**
+&nbsp;     * 打开文件，忽略文件中的所有非英文字母的字符，并将所有单词保存在 words 数组中.
+&nbsp;     *
+&nbsp;     * @param fileName 要处理的文件的路径
+&nbsp;     */
+&nbsp;    public Graph&lt;String, DefaultWeightedEdge&gt; createDirectedGraph(String fileName) {
+<b class="fc">&nbsp;        Graph&lt;String, DefaultWeightedEdge&gt; graph = new DefaultDirectedWeightedGraph&lt;&gt;(DefaultWeightedEdge.class);</b>
+&nbsp;
+<b class="fc">&nbsp;        try (BufferedReader br = new BufferedReader(new InputStreamReader(</b>
+&nbsp;                new FileInputStream(fileName), StandardCharsets.UTF_8))) {
+&nbsp;            String line;
+<b class="fc">&nbsp;            String previousWord = null;</b>
+&nbsp;
+<b class="fc">&nbsp;            while ((line = br.readLine()) != null) {</b>
+<b class="fc">&nbsp;                String[] words = line.replaceAll(&quot;[^a-zA-Z ]&quot;, &quot;&quot;).toLowerCase().split(&quot;\\s+&quot;);</b>
+&nbsp;
+<b class="fc">&nbsp;                for (String word : words) {</b>
+<b class="fc">&nbsp;                    if (!word.isEmpty()) {</b>
+<b class="fc">&nbsp;                        graph.addVertex(word);</b>
+&nbsp;
+<b class="fc">&nbsp;                        if (previousWord != null) {</b>
+<b class="fc">&nbsp;                            DefaultWeightedEdge edge = graph.getEdge(previousWord, word);</b>
+<b class="fc">&nbsp;                            if (edge != null) {</b>
+<b class="fc">&nbsp;                                double currentWeight = graph.getEdgeWeight(edge);</b>
+<b class="fc">&nbsp;                                graph.setEdgeWeight(edge, currentWeight + 1);</b>
+<b class="fc">&nbsp;                            } else {</b>
+<b class="fc">&nbsp;                                Graphs.addEdgeWithVertices(graph, previousWord, word, 1);</b>
+&nbsp;                            }
+&nbsp;                        }
+<b class="fc">&nbsp;                        previousWord = word;</b>
+&nbsp;                    }
+&nbsp;                }
+<b class="fc">&nbsp;            }</b>
+<b class="fc">&nbsp;        } catch (IOException e) {</b>
+<b class="nc">&nbsp;            e.printStackTrace();</b>
+<b class="nc">&nbsp;            return null;</b>
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+<b class="fc">&nbsp;        return graph;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 创建图.
+&nbsp;     *
+&nbsp;     * @param words 图的顶点
+&nbsp;     *
+&nbsp;     */
+&nbsp;    private void buildGraph(String[] words) {
+<b class="nc">&nbsp;        graph = new DefaultDirectedWeightedGraph&lt;&gt;(DefaultWeightedEdge.class);</b>
+&nbsp;
+<b class="nc">&nbsp;        for (int i = 0; i &lt; words.length - 1; i++) {</b>
+<b class="nc">&nbsp;            String word1 = words[i];</b>
+<b class="nc">&nbsp;            String word2 = words[i + 1];</b>
+&nbsp;
+<b class="nc">&nbsp;            graph.addVertex(word1);</b>
+<b class="nc">&nbsp;            graph.addVertex(word2);</b>
+&nbsp;
+<b class="nc">&nbsp;            DefaultWeightedEdge edge = graph.getEdge(word1, word2);</b>
+<b class="nc">&nbsp;            if (edge != null) { //如果找到边，则权重+1</b>
+<b class="nc">&nbsp;                double currentWeight = graph.getEdgeWeight(edge);</b>
+<b class="nc">&nbsp;                graph.setEdgeWeight(edge, currentWeight + 1);</b>
+<b class="nc">&nbsp;            } else { //找不到边，则增加边</b>
+<b class="nc">&nbsp;                Graphs.addEdgeWithVertices(graph, word1, word2, 1);</b>
+&nbsp;            }
+&nbsp;        }
+<b class="nc">&nbsp;        showDirectedGrap();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 展示有向图.
+&nbsp;     */
+&nbsp;    private void showDirectedGrap() {
+<b class="nc">&nbsp;        JGraphXAdapter&lt;String, DefaultWeightedEdge&gt; graphAdapter = new JGraphXAdapter&lt;&gt;(graph);</b>
+&nbsp;
+&nbsp;        // 为图应用布局
+<b class="nc">&nbsp;        mxCircleLayout layout = new mxCircleLayout(graphAdapter);</b>
+<b class="nc">&nbsp;        layout.execute(graphAdapter.getDefaultParent());</b>
+&nbsp;
+&nbsp;        // 获取用于显示图形的图组件
+<b class="nc">&nbsp;        graphComponent = new mxGraphComponent(graphAdapter);</b>
+&nbsp;        //  this.graphComponent=graphComponent;
+&nbsp;
+&nbsp;        // 迭代边以设置显示权重的标签和改变边的颜色
+<b class="nc">&nbsp;        mxGraph jgxGraph = graphComponent.getGraph();</b>
+<b class="nc">&nbsp;        Object[] edges = jgxGraph.getChildEdges(jgxGraph.getDefaultParent());</b>
+&nbsp;
+<b class="nc">&nbsp;        for (Object edge : edges) {</b>
+<b class="nc">&nbsp;            mxCell cell = (mxCell) edge;</b>
+<b class="nc">&nbsp;            String source = cell.getSource().getValue().toString();</b>
+<b class="nc">&nbsp;            String target = cell.getTarget().getValue().toString();</b>
+<b class="nc">&nbsp;            DefaultWeightedEdge jgtEdge = graph.getEdge(source, target);</b>
+<b class="nc">&nbsp;            if (jgtEdge != null) {</b>
+<b class="nc">&nbsp;                double weight = graph.getEdgeWeight(jgtEdge);</b>
+<b class="nc">&nbsp;                jgxGraph.getModel().setValue(cell, String.valueOf((int) weight));</b>
+<b class="nc">&nbsp;                jgxGraph.setCellStyle(&quot;strokeColor=black;edgeStyle=curved;&quot;, new Object[]{cell}); // 边为黑色</b>
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;
+<b class="nc">&nbsp;        add(graphComponent, BorderLayout.CENTER); //画图</b>
+&nbsp;
+<b class="nc">&nbsp;        revalidate();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 将图保存为图像.
+&nbsp;     */
+&nbsp;    private void saveAsImage() {
+&nbsp;        // 确保正确的类型转换
+<b class="nc">&nbsp;        if (graphComponent instanceof mxGraphComponent) {</b>
+&nbsp;            // 获取 mxGraph 组件
+<b class="nc">&nbsp;            mxGraph graph = graphComponent.getGraph();</b>
+&nbsp;            // 创建图像
+<b class="nc">&nbsp;            BufferedImage image = mxCellRenderer.createBufferedImage(graph, null, 1, Color.WHITE,</b>
+<b class="nc">&nbsp;                    graphComponent.isAntiAlias(), null, graphComponent.getCanvas());</b>
+&nbsp;
+&nbsp;            // 创建文件选择器
+<b class="nc">&nbsp;            JFileChooser fileChooser = new JFileChooser();</b>
+&nbsp;            // 显示保存文件对话框
+<b class="nc">&nbsp;            int result = fileChooser.showSaveDialog(null);</b>
+<b class="nc">&nbsp;            if (result == JFileChooser.APPROVE_OPTION) {</b>
+&nbsp;                // 获取用户选择的文件
+<b class="nc">&nbsp;                File selectedFile = fileChooser.getSelectedFile();</b>
+&nbsp;                try {
+&nbsp;                    // 将图像保存为 PNG 格式
+<b class="nc">&nbsp;                    ImageIO.write(image, &quot;PNG&quot;, selectedFile);</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null,</b>
+&nbsp;                            &quot;Graph saved as image successfully.&quot;, &quot;Success&quot;, JOptionPane.INFORMATION_MESSAGE);
+<b class="nc">&nbsp;                } catch (IOException e) {</b>
+<b class="nc">&nbsp;                    e.printStackTrace();</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null,</b>
+&nbsp;                            &quot;Failed to save graph as image.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+<b class="nc">&nbsp;                }</b>
+&nbsp;            }
+<b class="nc">&nbsp;        } else {</b>
+&nbsp;            // 如果组件不是 mxGraphComponent，则显示错误消息
+<b class="nc">&nbsp;            JOptionPane.showMessageDialog(null,</b>
+&nbsp;                    &quot;Component is not a mxGraphComponent.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 查询桥接词.
+&nbsp;     *
+&nbsp;     * @param word1 第一个单词
+&nbsp;     * @param word2 第二个单词
+&nbsp;     * @return 包含桥接词信息的字符串
+&nbsp;     */
+&nbsp;    public String queryBridgeWords(Graph&lt;String, DefaultWeightedEdge&gt; G,String word1, String word2) {
+<b class="fc">&nbsp;        if (G==null || (!G.containsVertex(word1) &amp;&amp; !G.containsVertex(word2))){// 检查图中是否包含 word1 和 word2</b>
+<b class="fc">&nbsp;            return &quot;No \&quot;&quot; + word1 + &quot;\&quot; and \&quot;&quot; + word2 + &quot;\&quot; in the graph!&quot;;</b>
+<b class="fc">&nbsp;        } else if (!G.containsVertex(word1) || !G.containsVertex(word2)) {</b>
+<b class="fc">&nbsp;            return &quot;No \&quot;&quot; + (G.containsVertex(word1) ? word2 : word1) + &quot;\&quot; in the graph!&quot;;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        StringBuilder result = new StringBuilder();// 用于存储桥接词的结果字符串</b>
+<b class="fc">&nbsp;        List&lt;String&gt; list = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;        boolean foundBridge = false;// 是否找到桥接词的标志</b>
+<b class="fc">&nbsp;        int count=0;</b>
+<b class="fc">&nbsp;        Set&lt;DefaultWeightedEdge&gt; edgesFromWord1 = G.outgoingEdgesOf(word1);// 获取以 word1 为源的所有边</b>
+<b class="fc">&nbsp;        for (DefaultWeightedEdge edge : edgesFromWord1) {// 遍历这些边，找到所有的目标顶点</b>
+<b class="fc">&nbsp;            String intermediateWord = G.getEdgeTarget(edge);</b>
+<b class="fc">&nbsp;            Set&lt;DefaultWeightedEdge&gt; edgesFromIntermediate = G.outgoingEdgesOf(intermediateWord); // 获取 intermediateWord 到 word2 的所有边</b>
+<b class="fc">&nbsp;            for (DefaultWeightedEdge secondEdge : edgesFromIntermediate) {</b>
+<b class="fc">&nbsp;                if (G.getEdgeTarget(secondEdge).equals(word2)) {</b>
+<b class="fc">&nbsp;                    if (foundBridge) {// 如果已找到桥接词，则在结果字符串中添加逗号</b>
+<b class="fc">&nbsp;                        result.append(&quot;, &quot;);</b>
+&nbsp;                    }
+<b class="fc">&nbsp;                    result.append(intermediateWord);// 将 intermediateWord（桥接词）添加到结果字符串中</b>
+<b class="fc">&nbsp;                    list.add(intermediateWord);</b>
+<b class="fc">&nbsp;                    foundBridge = true;</b>
+<b class="fc">&nbsp;                    count++;</b>
+&nbsp;                }
+<b class="fc">&nbsp;            }</b>
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;        if (!foundBridge) {// 如果未找到桥接词，则返回相应消息</b>
+<b class="fc">&nbsp;            return &quot;No bridge words from \&quot;&quot; + word1 + &quot;\&quot; to \&quot;&quot; + word2 + &quot;\&quot;!&quot;;</b>
+&nbsp;        }
+<b class="fc">&nbsp;        List&lt;String&gt; word1List = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;        word1List.add(word1);</b>
+<b class="fc">&nbsp;        List&lt;String&gt; word2List = new ArrayList&lt;&gt;();</b>
+<b class="fc">&nbsp;        word2List.add(word2);</b>
+<b class="fc">&nbsp;        customizeGraph(word1List, word2List, list);</b>
+<b class="fc">&nbsp;        if(count==1) return  &quot;The bridge words from \&quot;&quot; + word1 + &quot;\&quot; to \&quot;&quot; + word2 + &quot;\&quot; is:&quot;+ result;</b>
+<b class="fc">&nbsp;        return &quot;The bridge words from \&quot;&quot; + word1 + &quot;\&quot; to \&quot;&quot; + word2 + &quot;\&quot; are:&quot; + result;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 在图中显示出桥接词.
+&nbsp;     *
+&nbsp;     * @param word1List         单词1的列表
+&nbsp;     * @param word2List         单词2的列表
+&nbsp;     * @param intermediateWords 中间词的列表
+&nbsp;     */
+&nbsp;    private void customizeGraph(List&lt;String&gt; word1List, List&lt;String&gt; word2List,
+&nbsp;                                List&lt;String&gt; intermediateWords) {
+<b class="fc">&nbsp;        JGraphXAdapter&lt;String, DefaultWeightedEdge&gt; graphAdapter = new JGraphXAdapter&lt;&gt;(graph);</b>
+&nbsp;        // 为图应用布局
+<b class="fc">&nbsp;        mxCircleLayout layout = new mxCircleLayout(graphAdapter);</b>
+<b class="fc">&nbsp;        layout.execute(graphAdapter.getDefaultParent());</b>
+&nbsp;
+&nbsp;        // 获取用于显示图形的图组件
+<b class="fc">&nbsp;        mxGraphComponent graphComponent = new mxGraphComponent(graphAdapter);</b>
+&nbsp;
+&nbsp;        // 迭代边以设置显示权重的标签和改变边的颜色
+<b class="fc">&nbsp;        mxGraph jgxGraph = graphComponent.getGraph();</b>
+<b class="fc">&nbsp;        Object[] edges = jgxGraph.getChildEdges(jgxGraph.getDefaultParent());</b>
+&nbsp;
+<b class="fc">&nbsp;        for (Object edge : edges) {</b>
+<b class="fc">&nbsp;            mxCell cell = (mxCell) edge;</b>
+<b class="fc">&nbsp;            String source = cell.getSource().getValue().toString();</b>
+<b class="fc">&nbsp;            String target = cell.getTarget().getValue().toString();</b>
+<b class="fc">&nbsp;            DefaultWeightedEdge jgtEdge = graph.getEdge(source, target);</b>
+<b class="fc">&nbsp;            if (jgtEdge != null) {</b>
+<b class="fc">&nbsp;                double weight = graph.getEdgeWeight(jgtEdge);</b>
+<b class="fc">&nbsp;                jgxGraph.getModel().setValue(cell, String.valueOf((int) weight));</b>
+<b class="fc">&nbsp;                jgxGraph.setCellStyle(&quot;strokeColor=black&quot;, new Object[]{cell}); // 边设置为黑色</b>
+&nbsp;
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        // 修改节点颜色
+<b class="fc">&nbsp;        for (String word1 : word1List) {</b>
+<b class="fc">&nbsp;            Object nodeCell1 = graphAdapter.getVertexToCellMap().get(word1);</b>
+<b class="fc">&nbsp;            if (nodeCell1 != null) {</b>
+<b class="fc">&nbsp;                graphComponent.getGraph().setCellStyle(&quot;fillColor=red;strokeColor=black&quot;,</b>
+&nbsp;                        new Object[]{nodeCell1});
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+<b class="fc">&nbsp;        for (String intermediateWord : intermediateWords) {</b>
+<b class="fc">&nbsp;            Object nodeCell = graphAdapter.getVertexToCellMap().get(intermediateWord);</b>
+<b class="fc">&nbsp;            if (nodeCell != null) {</b>
+<b class="fc">&nbsp;                graphComponent.getGraph().setCellStyle(&quot;fillColor=lightgreen;strokeColor=black&quot;,</b>
+&nbsp;                        new Object[]{nodeCell});
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+<b class="fc">&nbsp;        for (String word2 : word2List) {</b>
+<b class="fc">&nbsp;            Object nodeCell2 = graphAdapter.getVertexToCellMap().get(word2);</b>
+<b class="fc">&nbsp;            if (nodeCell2 != null) {</b>
+<b class="fc">&nbsp;                graphComponent.getGraph().setCellStyle(&quot;fillColor=red;strokeColor=black&quot;,</b>
+&nbsp;                        new Object[]{nodeCell2});
+&nbsp;            }
+<b class="fc">&nbsp;        }</b>
+&nbsp;
+<b class="fc">&nbsp;        add(graphComponent, BorderLayout.CENTER); // 画图</b>
+<b class="fc">&nbsp;        revalidate();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 生成一个新的文本字符串，通过在输入文本的相邻单词之间插入“桥梁”词.
+&nbsp;     *
+&nbsp;     * @param inputText 原始输入文本
+&nbsp;     * @param graph 有向带权图
+&nbsp;     * @return 新的文本字符串，如果输入为空则返回空字符串。
+&nbsp;     */
+&nbsp;    public String generateNewText(Graph&lt;String, DefaultWeightedEdge&gt; graph, String inputText) {
+&nbsp;        // 如果输入文本为空，则返回空字符串
+<b class="nc">&nbsp;        if (inputText.isEmpty()) {</b>
+<b class="nc">&nbsp;            return &quot;&quot;;</b>
+&nbsp;        }
+&nbsp;        // 处理文本中的标点符号和非字母字符
+<b class="nc">&nbsp;        inputText = inputText.replaceAll(&quot;[^A-Za-z ]&quot;, &quot; &quot;).replaceAll(&quot;\\s+&quot;, &quot; &quot;).trim();</b>
+&nbsp;        // 如果处理后文本为空，则返回空字符串
+<b class="nc">&nbsp;        if (inputText.isEmpty()) {</b>
+<b class="nc">&nbsp;            return &quot;&quot;;</b>
+&nbsp;        }
+<b class="nc">&nbsp;        if (graph==null){</b>
+<b class="nc">&nbsp;            return inputText;</b>
+&nbsp;        }
+&nbsp;        // 将输入文本按空格拆分成单词数组
+<b class="nc">&nbsp;        String[] inputWords = inputText.split(&quot;\\s+&quot;);</b>
+&nbsp;        // 创建一个用于存储输出单词的列表
+<b class="nc">&nbsp;        List&lt;String&gt; outputWords = new ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        List&lt;String&gt; word1List = new ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        List&lt;String&gt; word2List = new ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        List&lt;String&gt; intermediateWords = new ArrayList&lt;&gt;();</b>
+&nbsp;
+&nbsp;        // 遍历输入单词数组中的每个单词（除了最后一个）
+<b class="nc">&nbsp;        for (int i = 0; i &lt; inputWords.length - 1; i++) {</b>
+&nbsp;            // 当前单词
+<b class="nc">&nbsp;            String word1 = inputWords[i].toLowerCase();</b>
+&nbsp;            // 下一个单词
+<b class="nc">&nbsp;            String word2 = inputWords[i + 1].toLowerCase();</b>
+&nbsp;            // 将当前单词添加到输出单词列表中
+<b class="nc">&nbsp;            outputWords.add(inputWords[i]);</b>
+&nbsp;
+&nbsp;            // 如果图中包含当前单词和下一个单词作为顶点
+<b class="nc">&nbsp;            if (graph.containsVertex(word1) &amp;&amp; graph.containsVertex(word2)) {</b>
+&nbsp;                // 获取当前单词和下一个单词之间的随机桥梁词
+<b class="nc">&nbsp;                String bridge = getRandomBridgeWord(graph,word1, word2);</b>
+&nbsp;                // 如果桥梁词不为空，则将其添加到输出单词列表中
+<b class="nc">&nbsp;                if (bridge != null) {</b>
+<b class="nc">&nbsp;                    outputWords.add(bridge);</b>
+<b class="nc">&nbsp;                    word1List.add(word1);</b>
+<b class="nc">&nbsp;                    word2List.add(word2);</b>
+<b class="nc">&nbsp;                    intermediateWords.add(bridge);</b>
+&nbsp;                }
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        // 将最后一个单词添加到输出单词列表中
+<b class="nc">&nbsp;        outputWords.add(inputWords[inputWords.length - 1]);</b>
+&nbsp;        //customizeGraph(word1List, word2List, intermediateWords);
+&nbsp;
+&nbsp;        // 将输出单词列表转换为字符串，并以空格分隔
+<b class="nc">&nbsp;        return String.join(&quot; &quot;, outputWords);</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取两个单词之间的随机桥接词.
+&nbsp;     *
+&nbsp;     * @param word1 第一个单词
+&nbsp;     * @param word2 第二个单词
+&nbsp;     * @param graph 有向无权图
+&nbsp;     * @return 桥接词，如果不存在桥接词则返回null
+&nbsp;     */
+&nbsp;    private String getRandomBridgeWord(Graph&lt;String, DefaultWeightedEdge&gt; graph,String word1, String word2) {
+&nbsp;        // 用于存储桥接词的集合
+<b class="nc">&nbsp;        Set&lt;String&gt; bridgeWords = new HashSet&lt;&gt;();</b>
+&nbsp;
+&nbsp;        // 获取以 word1 为源的所有边
+<b class="nc">&nbsp;        Set&lt;DefaultWeightedEdge&gt; edgesFromWord1 = graph.outgoingEdgesOf(word1);</b>
+&nbsp;
+&nbsp;        // 遍历这些边，找到所有的目标顶点
+<b class="nc">&nbsp;        for (DefaultWeightedEdge edge : edgesFromWord1) {</b>
+<b class="nc">&nbsp;            String intermediateWord = graph.getEdgeTarget(edge);</b>
+&nbsp;            // 获取 intermediateWord 到 word2 的所有边
+<b class="nc">&nbsp;            Set&lt;DefaultWeightedEdge&gt; edgesFromIntermediate = graph.outgoingEdgesOf(intermediateWord);</b>
+<b class="nc">&nbsp;            for (DefaultWeightedEdge secondEdge : edgesFromIntermediate) {</b>
+<b class="nc">&nbsp;                if (graph.getEdgeTarget(secondEdge).equals(word2)) {</b>
+&nbsp;                    // 添加 intermediateWord 到桥接词集合中
+<b class="nc">&nbsp;                    bridgeWords.add(intermediateWord);</b>
+&nbsp;                }
+<b class="nc">&nbsp;            }</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;        // 如果集合为空，返回null
+<b class="nc">&nbsp;        if (bridgeWords.isEmpty()) {</b>
+<b class="nc">&nbsp;            return null;</b>
+&nbsp;        }
+&nbsp;        // 随机选择一个桥接词
+<b class="nc">&nbsp;        int size = bridgeWords.size();</b>
+&nbsp;        // int item = new Random().nextInt(size); //有bad practice问题每次使用都创建一个Radom对象
+<b class="nc">&nbsp;        int item = randomBridgeWord.nextInt(size);</b>
+<b class="nc">&nbsp;        int i = 0;</b>
+<b class="nc">&nbsp;        for (String bridgeWord : bridgeWords) {</b>
+<b class="nc">&nbsp;            if (i == item) {</b>
+<b class="nc">&nbsp;                return bridgeWord;</b>
+&nbsp;            }
+<b class="nc">&nbsp;            i++;</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        return null; // 这个返回实际上不会被执行</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 计算最短路径的方法.
+&nbsp;     *
+&nbsp;     * @param word1 起始单词
+&nbsp;     * @param word2 目标单词
+&nbsp;     * @return 最短路径的字符串表示形式，如果不存在最短路径和距离，则返回相应的提示信息
+&nbsp;     */
+&nbsp;    private String calcShortestPath(Graph&lt;String, DefaultWeightedEdge&gt; graph,String word1, String word2) {
+<b class="nc">&nbsp;        if (!graph.containsVertex(word1) || !graph.containsVertex(word2)) {</b>
+<b class="nc">&nbsp;            javax.swing.JOptionPane.showMessageDialog(null, &quot;图中未找到一个或两个单词。&quot;);</b>
+<b class="nc">&nbsp;            return &quot;0&quot;;</b>
+&nbsp;        }
+&nbsp;        // 用于记录每个顶点到起始点的最短距离
+<b class="nc">&nbsp;        java.util.Map&lt;String, Double&gt; distance = new java.util.HashMap&lt;&gt;();</b>
+&nbsp;        // 用于记录每个顶点的前驱节点，用于还原最短路径
+<b class="nc">&nbsp;        java.util.Map&lt;String, java.util.List&lt;String&gt;&gt; predecessors = new java.util.HashMap&lt;&gt;();</b>
+&nbsp;        // 初始化距离和前驱节点
+<b class="nc">&nbsp;        for (String vertex : graph.vertexSet()) {</b>
+<b class="nc">&nbsp;            distance.put(vertex, java.lang.Double.POSITIVE_INFINITY);</b>
+<b class="nc">&nbsp;            predecessors.put(vertex, new java.util.ArrayList&lt;&gt;());</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        distance.put(word1, 0.0); // 起始点到自身的距离为0</b>
+&nbsp;        // 未访问的顶点集合
+<b class="nc">&nbsp;        java.util.Set&lt;String&gt; visited = new java.util.HashSet&lt;&gt;();</b>
+&nbsp;        // 使用 BFS 找到所有最短路径
+<b class="nc">&nbsp;        java.util.Queue&lt;String&gt; queue = new java.util.ArrayDeque&lt;&gt;();</b>
+<b class="nc">&nbsp;        queue.offer(word1);</b>
+<b class="nc">&nbsp;        visited.add(word1);</b>
+&nbsp;
+<b class="nc">&nbsp;        while (!queue.isEmpty()) {</b>
+<b class="nc">&nbsp;            String currentVertex = queue.poll();</b>
+<b class="nc">&nbsp;            for (DefaultWeightedEdge edge : graph.outgoingEdgesOf(currentVertex)) {</b>
+<b class="nc">&nbsp;                String neighbor = org.jgrapht.Graphs.getOppositeVertex(graph, edge, currentVertex);</b>
+<b class="nc">&nbsp;                double edgeWeight = graph.getEdgeWeight(edge);</b>
+<b class="nc">&nbsp;                double alt = distance.get(currentVertex) + edgeWeight;</b>
+&nbsp;
+<b class="nc">&nbsp;                if (alt &lt; distance.get(neighbor)) {</b>
+<b class="nc">&nbsp;                    distance.put(neighbor, alt);</b>
+<b class="nc">&nbsp;                    predecessors.get(neighbor).clear();</b>
+<b class="nc">&nbsp;                    predecessors.get(neighbor).add(currentVertex);</b>
+&nbsp;
+<b class="nc">&nbsp;                    if (!visited.contains(neighbor)) {</b>
+<b class="nc">&nbsp;                        queue.offer(neighbor);</b>
+<b class="nc">&nbsp;                        visited.add(neighbor);</b>
+&nbsp;                    }
+<b class="nc">&nbsp;                } else if (alt == distance.get(neighbor)) {</b>
+<b class="nc">&nbsp;                    predecessors.get(neighbor).add(currentVertex);</b>
+&nbsp;                }
+<b class="nc">&nbsp;            }</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;        // 获取所有最短路径
+<b class="nc">&nbsp;        java.util.List&lt;java.util.List&lt;String&gt;&gt; allShortestPaths = new java.util.ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        java.util.List&lt;String&gt; path = new java.util.ArrayList&lt;&gt;();</b>
+<b class="nc">&nbsp;        path.add(word2);</b>
+<b class="nc">&nbsp;        getAllShortestPaths(word1, word2, predecessors, path, allShortestPaths);</b>
+&nbsp;
+&nbsp;        // 显示所有最短路径和距离
+<b class="nc">&nbsp;        java.lang.StringBuilder message = new java.lang.StringBuilder();</b>
+<b class="nc">&nbsp;        message.append(&quot;从 &quot;).append(word1).append(&quot; 到 &quot;).append(word2).append(&quot; 的所有最短路径为：\n&quot;);</b>
+<b class="nc">&nbsp;        for (java.util.List&lt;String&gt; shortestPath : allShortestPaths) {</b>
+<b class="nc">&nbsp;            java.util.Collections.reverse(shortestPath); // 翻转路径顺序</b>
+<b class="nc">&nbsp;            message.append(shortestPath).append(&quot;\n&quot;);</b>
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        message.append(&quot;最短距离为：&quot;).append(distance.get(word2));</b>
+&nbsp;        //message信息用弹窗表示出来
+&nbsp;        //javax.swing.JOptionPane.showMessageDialog(null, message.toString());
+&nbsp;
+&nbsp;        // 组织返回的字符串
+<b class="nc">&nbsp;        StringBuilder result = new StringBuilder();</b>
+<b class="nc">&nbsp;        result.append(distance.get(word2)).append(&quot;;&quot;);</b>
+&nbsp;        // 将每条路径拼接到结果中
+<b class="nc">&nbsp;        for (List&lt;String&gt; shortestPath : allShortestPaths) {</b>
+<b class="nc">&nbsp;            Collections.reverse(shortestPath); // 翻转路径顺序</b>
+<b class="nc">&nbsp;            result.append(String.join(&quot; &quot;, shortestPath)).append(&quot;;&quot;);</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;
+<b class="nc">&nbsp;        return result.toString() + &#39;@&#39; + message.toString();</b>
+&nbsp;
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取所有最短路径的方法.
+&nbsp;     *
+&nbsp;     * @param word1              起始单词
+&nbsp;     * @param word2              目标单词
+&nbsp;     * @param predecessors       前任节点映射表
+&nbsp;     * @param currentPath        当前路径列表
+&nbsp;     * @param allShortestPaths   所有最短路径列表
+&nbsp;     */
+&nbsp;    private void getAllShortestPaths(String word1, String word2, java.util.Map&lt;String,
+&nbsp;            java.util.List&lt;String&gt;&gt; predecessors,
+&nbsp;                                     java.util.List&lt;String&gt; currentPath,
+&nbsp;                                     java.util.List&lt;java.util.List&lt;String&gt;&gt; allShortestPaths) {
+<b class="nc">&nbsp;        if (word1.equals(word2)) {</b>
+<b class="nc">&nbsp;            allShortestPaths.add(new java.util.ArrayList&lt;&gt;(currentPath));</b>
+&nbsp;        } else {
+<b class="nc">&nbsp;            for (String predecessor : predecessors.get(word2)) {</b>
+<b class="nc">&nbsp;                currentPath.add(predecessor);</b>
+<b class="nc">&nbsp;                getAllShortestPaths(word1, predecessor, predecessors, currentPath, allShortestPaths);</b>
+<b class="nc">&nbsp;                currentPath.remove(currentPath.size() - 1);</b>
+<b class="nc">&nbsp;            }</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 显示最短路径的方法.
+&nbsp;     *
+&nbsp;     * @param paths 最短路径的字符串表示形式
+&nbsp;     */
+&nbsp;    private void showShortestPaths(String paths) {
+<b class="nc">&nbsp;        JGraphXAdapter&lt;String, DefaultWeightedEdge&gt; graphAdapter = new JGraphXAdapter&lt;&gt;(graph);</b>
+&nbsp;        // 为图应用布局
+<b class="nc">&nbsp;        mxCircleLayout layout = new mxCircleLayout(graphAdapter);</b>
+<b class="nc">&nbsp;        layout.execute(graphAdapter.getDefaultParent());</b>
+&nbsp;
+&nbsp;        // 获取用于显示图形的图组件
+<b class="nc">&nbsp;        mxGraphComponent graphComponent = new mxGraphComponent(graphAdapter);</b>
+&nbsp;
+&nbsp;        // 迭代边以设置显示权重的标签和改变边的颜色
+<b class="nc">&nbsp;        mxGraph jgxGraph = graphComponent.getGraph();</b>
+<b class="nc">&nbsp;        Object[] edges = jgxGraph.getChildEdges(jgxGraph.getDefaultParent());</b>
+&nbsp;
+<b class="nc">&nbsp;        for (Object edge : edges) {</b>
+<b class="nc">&nbsp;            mxCell cell = (mxCell) edge;</b>
+<b class="nc">&nbsp;            String source = cell.getSource().getValue().toString();</b>
+<b class="nc">&nbsp;            String target = cell.getTarget().getValue().toString();</b>
+<b class="nc">&nbsp;            DefaultWeightedEdge jgtEdge = graph.getEdge(source, target);</b>
+<b class="nc">&nbsp;            if (jgtEdge != null) {</b>
+<b class="nc">&nbsp;                double weight = graph.getEdgeWeight(jgtEdge);</b>
+<b class="nc">&nbsp;                jgxGraph.getModel().setValue(cell, String.valueOf((int) weight));</b>
+<b class="nc">&nbsp;                jgxGraph.setCellStyle(&quot;strokeColor=black&quot;, new Object[]{cell}); // 边为黑色</b>
+&nbsp;
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+&nbsp;        // 根据路径信息标记最短路径
+<b class="nc">&nbsp;        String[] pathInfo = paths.split(&quot;;&quot;);</b>
+<b class="nc">&nbsp;        if (pathInfo.length &gt;= 2) {</b>
+<b class="nc">&nbsp;            String[] firstPath = pathInfo[1].split(&quot;\\s+&quot;);</b>
+<b class="nc">&nbsp;            Object nodeCell1 = graphAdapter.getVertexToCellMap().get(firstPath[0]);</b>
+<b class="nc">&nbsp;            if (nodeCell1 != null) {</b>
+&nbsp;                // 在图组件中找到节点修改颜色
+<b class="nc">&nbsp;                graphComponent.getGraph().setCellStyle(&quot;fillColor=red;strokeColor=red&quot;,</b>
+&nbsp;                        new Object[]{nodeCell1});
+&nbsp;            }
+<b class="nc">&nbsp;            Object nodeCell2 = graphAdapter.getVertexToCellMap().get(firstPath[firstPath.length - 1]);</b>
+<b class="nc">&nbsp;            if (nodeCell2 != null) {</b>
+&nbsp;                // 在图组件中找到节点修改颜色
+<b class="nc">&nbsp;                graphComponent.getGraph().setCellStyle(&quot;fillColor=red;strokeColor=red&quot;,</b>
+&nbsp;                        new Object[]{nodeCell2});
+&nbsp;            }
+&nbsp;        }
+&nbsp;        // Red, Orange,Green, Blue, Purple
+<b class="nc">&nbsp;        String[] colorSchemes = new String[]{</b>
+&nbsp;                &quot;#FF0000&quot;, &quot;#FFA500&quot;, &quot;#008000&quot;, &quot;#0000FF&quot;, &quot;#800080&quot;};
+<b class="nc">&nbsp;        for (int i = 1; i &lt; pathInfo.length; i++) {</b>
+<b class="nc">&nbsp;            String[] vertices = pathInfo[i].split(&quot;\\s+&quot;);</b>
+&nbsp;
+<b class="nc">&nbsp;            for (int j = 0; j &lt; vertices.length - 1; j++) {</b>
+<b class="nc">&nbsp;                String source = vertices[j];</b>
+<b class="nc">&nbsp;                String target = vertices[j + 1];</b>
+&nbsp;                // 获取边对应的cell
+<b class="nc">&nbsp;                Object edge = graphAdapter.getEdgeToCellMap().get(graph.getEdge(target, source));</b>
+&nbsp;                // 根据最短路径的顺序设置虚线样式和颜色
+<b class="nc">&nbsp;                jgxGraph.setCellStyles(mxConstants.STYLE_DASHED, &quot;1&quot;, new Object[]{edge});</b>
+<b class="nc">&nbsp;                jgxGraph.setCellStyles(mxConstants.STYLE_STROKECOLOR,</b>
+&nbsp;                        colorSchemes[(i - 1) % pathInfo.length], new Object[]{edge}); // 橙色
+&nbsp;            }
+&nbsp;        }
+<b class="nc">&nbsp;        add(graphComponent, BorderLayout.CENTER); //画图</b>
+<b class="nc">&nbsp;        revalidate();</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 执行随机游走的方法.
+&nbsp;     *
+&nbsp;     * @return walkPath.toString().trim()随机游走的结果，即生成的随机路径
+&nbsp;     */
+&nbsp;    private String randomWalk() {
+<b class="nc">&nbsp;        StringBuilder walkPath = new StringBuilder();</b>
+<b class="nc">&nbsp;        Set&lt;DefaultWeightedEdge&gt; visitedEdges = new HashSet&lt;&gt;();</b>
+<b class="nc">&nbsp;        SecureRandom random = new SecureRandom(); //增强不可预测性</b>
+&nbsp;        //Random random = new Random();
+&nbsp;
+<b class="nc">&nbsp;        List&lt;String&gt; vertices = new ArrayList&lt;&gt;(graph.vertexSet());</b>
+<b class="nc">&nbsp;        String currentVertex = vertices.get(random.nextInt(vertices.size())); // 直接随机选择起始节点</b>
+<b class="nc">&nbsp;        walkPath.append(currentVertex).append(&quot; &quot;);</b>
+&nbsp;
+&nbsp;        while (true) {
+&nbsp;            //找当前点的出边
+<b class="nc">&nbsp;            Set&lt;DefaultWeightedEdge&gt; outgoingEdges = graph.outgoingEdgesOf(currentVertex);</b>
+&nbsp;
+<b class="nc">&nbsp;            if (outgoingEdges.isEmpty()) {</b>
+<b class="nc">&nbsp;                break; // 如果当前节点没有出边，则结束游走</b>
+&nbsp;            }
+&nbsp;            //随机取一个出边
+<b class="nc">&nbsp;            DefaultWeightedEdge randomEdge =</b>
+<b class="nc">&nbsp;                    (DefaultWeightedEdge) outgoingEdges.toArray()[random.nextInt(outgoingEdges.size())];</b>
+&nbsp;            //出边相连的点
+<b class="nc">&nbsp;            String nextVertex = Graphs.getOppositeVertex(graph, randomEdge, currentVertex);</b>
+<b class="nc">&nbsp;            walkPath.append(nextVertex).append(&quot; &quot;);</b>
+&nbsp;            //标记走过的出边
+<b class="nc">&nbsp;            if (!visitedEdges.add(randomEdge)) {</b>
+<b class="nc">&nbsp;                break;</b>
+&nbsp;            }
+&nbsp;            //判断是不是第二次走这条出边
+<b class="nc">&nbsp;            currentVertex = nextVertex;</b>
+<b class="nc">&nbsp;        }</b>
+&nbsp;
+<b class="nc">&nbsp;        return walkPath.toString().trim(); // 返回游走路径字符串，去除末尾空格</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 显示随机路径的方法.
+&nbsp;     *
+&nbsp;     * @param randompath 随机路径的字符串表示形式
+&nbsp;     */
+&nbsp;    private void showRandomPath(String randompath) {
+&nbsp;
+<b class="nc">&nbsp;        File tmpFile = new File(&quot;tmpshort.txt&quot;);</b>
+&nbsp;        // 清空文件内容 同样指定utf-8
+&nbsp;        //try (BufferedWriter clearWriter = new BufferedWriter(new FileWriter(tmpFile))) {
+<b class="nc">&nbsp;        try (BufferedWriter clearWriter = new BufferedWriter(new OutputStreamWriter(</b>
+&nbsp;                new FileOutputStream(tmpFile), StandardCharsets.UTF_8))) {
+<b class="nc">&nbsp;            clearWriter.write(&quot;&quot;); // 清空文件内容</b>
+<b class="nc">&nbsp;        } catch (IOException ex) {</b>
+<b class="nc">&nbsp;            ex.printStackTrace();</b>
+<b class="nc">&nbsp;            JOptionPane.showMessageDialog(null,</b>
+&nbsp;                    &quot;Failed to clear tmpfile content.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+&nbsp;            return;
+<b class="nc">&nbsp;        }</b>
+<b class="nc">&nbsp;        JGraphXAdapter&lt;String, DefaultWeightedEdge&gt; graphAdapter = new JGraphXAdapter&lt;&gt;(graph);</b>
+&nbsp;        // 为图应用布局
+<b class="nc">&nbsp;        mxCircleLayout layout = new mxCircleLayout(graphAdapter);</b>
+<b class="nc">&nbsp;        layout.execute(graphAdapter.getDefaultParent());</b>
+&nbsp;
+&nbsp;        // 获取用于显示图形的图组件
+<b class="nc">&nbsp;        mxGraphComponent graphComponent = new mxGraphComponent(graphAdapter);</b>
+&nbsp;
+&nbsp;        // 迭代边以设置显示权重的标签和改变边的颜色
+<b class="nc">&nbsp;        mxGraph jgxGraph = graphComponent.getGraph();</b>
+<b class="nc">&nbsp;        Object[] edges = jgxGraph.getChildEdges(jgxGraph.getDefaultParent());</b>
+&nbsp;
+<b class="nc">&nbsp;        for (Object edge : edges) {</b>
+<b class="nc">&nbsp;            mxCell cell = (mxCell) edge;</b>
+<b class="nc">&nbsp;            String source = cell.getSource().getValue().toString();</b>
+<b class="nc">&nbsp;            String target = cell.getTarget().getValue().toString();</b>
+<b class="nc">&nbsp;            DefaultWeightedEdge jgtEdge = graph.getEdge(source, target);</b>
+<b class="nc">&nbsp;            if (jgtEdge != null) {</b>
+<b class="nc">&nbsp;                double weight = graph.getEdgeWeight(jgtEdge);</b>
+<b class="nc">&nbsp;                jgxGraph.getModel().setValue(cell, String.valueOf((int) weight));</b>
+<b class="nc">&nbsp;                jgxGraph.setCellStyle(&quot;strokeColor=black&quot;, new Object[]{cell}); // 边为黑色</b>
+&nbsp;
+&nbsp;            }
+&nbsp;        }
+&nbsp;
+<b class="nc">&nbsp;        add(graphComponent, BorderLayout.CENTER); //画图</b>
+<b class="nc">&nbsp;        revalidate();</b>
+&nbsp;
+&nbsp;        //在这里分隔出randompath里的所有节点
+<b class="nc">&nbsp;        String[] nodes = randompath.split(&quot;\\s+&quot;); // 使用正则表达式以支持一个或多个空格分隔</b>
+&nbsp;        // 用于定时器的索引
+<b class="nc">&nbsp;        final int[] index = {0};</b>
+&nbsp;        // 创建Timer，每3秒执行一次
+<b class="nc">&nbsp;        if (colorTimer != null) {</b>
+<b class="nc">&nbsp;            colorTimer.stop();</b>
+<b class="nc">&nbsp;            colorTimer = null; // 释放之前的计时器</b>
+&nbsp;        }
+<b class="nc">&nbsp;        colorTimer = new Timer(1000, e -&gt; {</b>
+<b class="nc">&nbsp;            if (index[0] &lt; nodes.length) {</b>
+<b class="nc">&nbsp;                String nodeCurrent = nodes[index[0]]; // 当前节点，作为边的源节点</b>
+<b class="nc">&nbsp;                Object nodeCell = graphAdapter.getVertexToCellMap().get(nodeCurrent);</b>
+<b class="nc">&nbsp;                if (nodeCell != null) {</b>
+&nbsp;                    // 在图组件中找到节点修改颜色
+<b class="nc">&nbsp;                    graphComponent.getGraph().setCellStyle(&quot;strokeColor=red&quot;, new Object[]{nodeCell});</b>
+&nbsp;                }
+<b class="nc">&nbsp;                if (index[0] != 0) {</b>
+<b class="nc">&nbsp;                    String nodeLast = nodes[index[0] - 1]; // 上一个节点</b>
+&nbsp;                    // 获取图中的边对象
+<b class="nc">&nbsp;                    DefaultWeightedEdge edge = graph.getEdge(nodeLast, nodeCurrent);</b>
+<b class="nc">&nbsp;                    if (edge != null) {</b>
+&nbsp;                        // 使用graphAdapter来获取边对应的mxCell对象
+<b class="nc">&nbsp;                        Object edgeCell = graphAdapter.getEdgeToCellMap().get(edge);</b>
+<b class="nc">&nbsp;                        if (edgeCell != null) {</b>
+&nbsp;                            // 设置边的样式为红色和虚线
+<b class="nc">&nbsp;                            graphComponent.getGraph().setCellStyle(&quot;strokeColor=red;dashed=1&quot;,</b>
+&nbsp;                                    new Object[]{edgeCell});
+<b class="nc">&nbsp;                            if (index[0] == nodes.length - 1) {</b>
+<b class="nc">&nbsp;                                graphComponent.getGraph().setCellStyle(&quot;strokeColor=yellow;dashed=1&quot;,</b>
+&nbsp;                                        new Object[]{edgeCell});
+&nbsp;                            }
+&nbsp;                        }
+&nbsp;                        // 高亮显示源节点和目标节点（如果需要的话）
+&nbsp;                    }
+&nbsp;                }
+<b class="nc">&nbsp;                graphComponent.revalidate();</b>
+<b class="nc">&nbsp;                graphComponent.repaint();</b>
+<b class="nc">&nbsp;                index[0]++;</b>
+&nbsp;                // 将节点值写入文件 指定utf-8
+&nbsp;                //try (BufferedWriter writer = new BufferedWriter(new FileWriter(tmpFile, true))) {
+<b class="nc">&nbsp;                try (BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(</b>
+&nbsp;                        new FileOutputStream(tmpFile, true), StandardCharsets.UTF_8))) {
+<b class="nc">&nbsp;                    writer.write(nodeCurrent + &quot; &quot;); // 写入节点值并用空格分隔</b>
+<b class="nc">&nbsp;                } catch (IOException ex) {</b>
+<b class="nc">&nbsp;                    ex.printStackTrace();</b>
+<b class="nc">&nbsp;                    JOptionPane.showMessageDialog(null,</b>
+&nbsp;                            &quot;Failed to write node value to file.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+<b class="nc">&nbsp;                }</b>
+<b class="nc">&nbsp;            } else {</b>
+<b class="nc">&nbsp;                ((Timer) e.getSource()).stop(); // 停止计时器</b>
+&nbsp;                //遍历完成
+<b class="nc">&nbsp;                int confirmResult = JOptionPane.showConfirmDialog(null,</b>
+&nbsp;                        &quot;遍历完成，需要保存随机游走路径吗?&quot;, &quot;Confirm&quot;, JOptionPane.YES_NO_OPTION);
+<b class="nc">&nbsp;                if (confirmResult == JOptionPane.NO_OPTION) {</b>
+&nbsp;                    return; // 如果用户选择不保存，直接返回
+<b class="nc">&nbsp;                } else if (confirmResult == JOptionPane.YES_OPTION) {</b>
+&nbsp;                    // 用户选择保存，弹出文件选择对话框
+<b class="nc">&nbsp;                    JFileChooser fileChooser = new JFileChooser();</b>
+<b class="nc">&nbsp;                    int result = fileChooser.showSaveDialog(null);</b>
+<b class="nc">&nbsp;                    if (result != JFileChooser.APPROVE_OPTION) {</b>
+&nbsp;                        return; // 如果用户未选择文件，直接返回
+&nbsp;                    }
+&nbsp;                    // 获取用户选择的文件
+<b class="nc">&nbsp;                    File selectedFile = fileChooser.getSelectedFile();</b>
+&nbsp;                    // 复制文件内容
+&nbsp;                    // 清空文件内容 指定utf-8
+&nbsp;                    //try (BufferedWriter clearWriter = new BufferedWriter(new FileWriter(selectedFile))) {
+<b class="nc">&nbsp;                    try (BufferedWriter clearWriter = new BufferedWriter(new OutputStreamWriter(</b>
+&nbsp;                            new FileOutputStream(selectedFile), StandardCharsets.UTF_8))) {
+<b class="nc">&nbsp;                        clearWriter.write(&quot;&quot;); // 清空文件内容</b>
+<b class="nc">&nbsp;                    } catch (IOException ex) {</b>
+<b class="nc">&nbsp;                        ex.printStackTrace();</b>
+<b class="nc">&nbsp;                        JOptionPane.showMessageDialog(null,</b>
+&nbsp;                                &quot;Failed to clear file content.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+&nbsp;                        return;
+<b class="nc">&nbsp;                    }</b>
+&nbsp;                    //指定utf-8
+&nbsp;                    //try (BufferedReader reader = new BufferedReader(new FileReader(&quot;tmpshort.txt&quot;));
+<b class="nc">&nbsp;                    try (BufferedReader reader = new BufferedReader(new InputStreamReader(</b>
+&nbsp;                            new FileInputStream(&quot;tmpshort.txt&quot;), StandardCharsets.UTF_8));
+<b class="nc">&nbsp;                         BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(</b>
+&nbsp;                                 new FileOutputStream(selectedFile), StandardCharsets.UTF_8))) {
+&nbsp;                        //BufferedWriter writer = new BufferedWriter(new FileWriter(selectedFile))) {
+&nbsp;                        String line;
+<b class="nc">&nbsp;                        while ((line = reader.readLine()) != null) {</b>
+<b class="nc">&nbsp;                            writer.write(line);</b>
+<b class="nc">&nbsp;                            writer.newLine();</b>
+&nbsp;                        }
+<b class="nc">&nbsp;                        JOptionPane.showMessageDialog(null, &quot;保存成功&quot;, &quot;Success&quot;, JOptionPane.INFORMATION_MESSAGE);</b>
+<b class="nc">&nbsp;                    } catch (IOException ex) {</b>
+<b class="nc">&nbsp;                        ex.printStackTrace();</b>
+<b class="nc">&nbsp;                        JOptionPane.showMessageDialog(null,</b>
+&nbsp;                                &quot;Failed to copy file content.&quot;, &quot;Error&quot;, JOptionPane.ERROR_MESSAGE);
+&nbsp;                        return;
+<b class="nc">&nbsp;                    }</b>
+&nbsp;                }
+&nbsp;
+&nbsp;            }
+&nbsp;        });
+<b class="nc">&nbsp;        colorTimer.start();</b>
+&nbsp;        return;
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 销毁计时器的方法.
+&nbsp;     */
+&nbsp;    private void togglePauseTimer() {
+<b class="nc">&nbsp;        if (colorTimer != null) {</b>
+<b class="nc">&nbsp;            colorTimer.stop();</b>
+<b class="nc">&nbsp;            colorTimer = null;</b>
+<b class="nc">&nbsp;            pauseButton.setText(&quot;Pause Random Walk&quot;);</b>
+<b class="nc">&nbsp;            isPaused = false;</b>
+&nbsp;        }
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return graphComponent
+&nbsp;     */
+&nbsp;    public mxGraphComponent getGraphComponent() {
+<b class="nc">&nbsp;        return graphComponent;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param graphComponent
+&nbsp;     */
+&nbsp;    public void setGraphComponent(mxGraphComponent graphComponent) {
+<b class="nc">&nbsp;        this.graphComponent = graphComponent;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return openButton
+&nbsp;     */
+&nbsp;    public JButton getOpenButton() {
+<b class="nc">&nbsp;        return openButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param openButton
+&nbsp;     */
+&nbsp;    public void setOpenButton(JButton openButton) {
+<b class="nc">&nbsp;        this.openButton = openButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return saveButton
+&nbsp;     */
+&nbsp;    public JButton getSaveButton() {
+<b class="nc">&nbsp;        return saveButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param saveButton
+&nbsp;     */
+&nbsp;    public void setSaveButton(JButton saveButton) {
+<b class="nc">&nbsp;        this.saveButton = saveButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return queryButton
+&nbsp;     */
+&nbsp;    public JButton getQueryButton() {
+<b class="nc">&nbsp;        return queryButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param queryButton
+&nbsp;     */
+&nbsp;    public void setQueryButton(JButton queryButton) {
+<b class="nc">&nbsp;        this.queryButton = queryButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return generateButton
+&nbsp;     */
+&nbsp;    public JButton getGenerateButton() {
+<b class="nc">&nbsp;        return generateButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param generateButton
+&nbsp;     */
+&nbsp;    public void setGenerateButton(JButton generateButton) {
+<b class="nc">&nbsp;        this.generateButton = generateButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return shortestPathButton
+&nbsp;     */
+&nbsp;    public JButton getShortestPathButton() {
+<b class="nc">&nbsp;        return shortestPathButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param shortestPathButton
+&nbsp;     */
+&nbsp;    public void setShortestPathButton(JButton shortestPathButton) {
+<b class="nc">&nbsp;        this.shortestPathButton = shortestPathButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return randomWalkButton
+&nbsp;     */
+&nbsp;    public JButton getRandomWalkButton() {
+<b class="nc">&nbsp;        return randomWalkButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param randomWalkButton
+&nbsp;     */
+&nbsp;    public void setRandomWalkButton(JButton randomWalkButton) {
+<b class="nc">&nbsp;        this.randomWalkButton = randomWalkButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return pauseButton
+&nbsp;     */
+&nbsp;    public JButton getPauseButton() {
+<b class="nc">&nbsp;        return pauseButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param pauseButton
+&nbsp;     */
+&nbsp;    public void setPauseButton(JButton pauseButton) {
+<b class="nc">&nbsp;        this.pauseButton = pauseButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return endButton
+&nbsp;     */
+&nbsp;    public JButton getEndButton() {
+<b class="nc">&nbsp;        return endButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param endButton
+&nbsp;     */
+&nbsp;    public void setEndButton(JButton endButton) {
+<b class="nc">&nbsp;        this.endButton = endButton;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return graph
+&nbsp;     */
+&nbsp;    public Graph&lt;String, DefaultWeightedEdge&gt; getGraph() {
+<b class="nc">&nbsp;        return graph;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param graph
+&nbsp;     */
+&nbsp;    public void setGraph(Graph&lt;String, DefaultWeightedEdge&gt; graph) {
+<b class="fc">&nbsp;        this.graph = graph;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return colorTimer
+&nbsp;     */
+&nbsp;    public Timer getColorTimer() {
+<b class="nc">&nbsp;        return colorTimer;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param colorTimer
+&nbsp;     */
+&nbsp;    public void setColorTimer(Timer colorTimer) {
+<b class="nc">&nbsp;        this.colorTimer = colorTimer;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 获取
+&nbsp;     * @return isPaused
+&nbsp;     */
+&nbsp;    public boolean isIsPaused() {
+<b class="nc">&nbsp;        return isPaused;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    /**
+&nbsp;     * 设置
+&nbsp;     * @param isPaused
+&nbsp;     */
+&nbsp;    public void setIsPaused(boolean isPaused) {
+<b class="nc">&nbsp;        this.isPaused = isPaused;</b>
+&nbsp;    }
+&nbsp;
+&nbsp;    public String toString() {
+<b class="nc">&nbsp;        return &quot;GraphGui{graphComponent = &quot; + graphComponent + &quot;, openButton = &quot; + openButton + &quot;, saveButton = &quot; + saveButton + &quot;, queryButton = &quot; + queryButton + &quot;, generateButton = &quot; + generateButton + &quot;, shortestPathButton = &quot; + shortestPathButton + &quot;, randomWalkButton = &quot; + randomWalkButton + &quot;, pauseButton = &quot; + pauseButton + &quot;, endButton = &quot; + endButton + &quot;, graph = &quot; + graph + &quot;, colorTimer = &quot; + colorTimer + &quot;, isPaused = &quot; + isPaused + &quot;, randomBridgeWord = &quot; + randomBridgeWord + &quot;}&quot;;</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2024-06-13 16:42</div>
+</div>
+</body>
+</html>
